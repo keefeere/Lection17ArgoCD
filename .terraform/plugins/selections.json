@@ -1,0 +1,14 @@
+{
+  "registry.terraform.io/gavinbunney/kubectl": {
+    "hash": "h1:gJrKpimR+B+Yrgr1OgOHaCN7b19EPcrN62HZ/3ComuE=",
+    "version": "1.11.1"
+  },
+  "registry.terraform.io/hashicorp/helm": {
+    "hash": "h1:a/VTIYg/0Tkyz7XgRbEB5h1x4ftSPC0E4skxBVd6ufk=",
+    "version": "2.0.3"
+  },
+  "registry.terraform.io/hashicorp/kubernetes": {
+    "hash": "h1:zDdnJmYBp0zOsaHMrrbJgbSjyEbUybcRUx4DP6H4ZHw=",
+    "version": "2.0.3"
+  }
+}

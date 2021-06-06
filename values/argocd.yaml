@@ -1,0 +1,17 @@
+server:
+  extraArgs:
+    - --insecure
+  ingress:
+    enabled: true
+    annotations: {
+      kubernetes.io/ingress.class: traefik-cert-manager
+      }
+    
+    
+    hosts:
+     - argocd.keefeere.tk
+  config:
+    url: https://argocd.keefeere.tk
+configs:
+  secret:
+    argocdServerAdminPassword: "$2a$10$QnjaeGBeitbR6jtDFeK7KemojXkdWk/5GSkJrhDqnGlb5MP/Yxseq"  # admin - hash

@@ -1,0 +1,58 @@
+# macOS
+.DS_Store
+
+
+
+# Sublime Text project files
+*.sublime-workspace
+*.sublime-project
+
+# Visual Studio Code project files
+.vscode
+
+# Vagrant
+.vagrant/
+
+# Sensitive configs and keys
+*.pem
+aws.yml
+answers.txt
+.envrc
+
+# Terraform
+*.tfplan
+#.terraform/
+*.tfstate*
+
+# Python
+*.pyc
+__pycache__/
+# IDEA
+.idea
+
+*.tf.swp
+
+
+# atlantis
+atlantis.yq.yaml
+
+override.tf
+
+# ansible
+*.retry
+
+*.zip
+
+# terrafile
+**/vendor/
+
+.generated
+plan
+
+roles/
+*.vagrant
+/k8svagrant/kubernetes-setup/join-command
+/k8svagrant/kubernetes-setup/join-command-cpn
+/.test
+/k8svagrant/.vagrant
+/terraform/.terraform
