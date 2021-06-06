@@ -13,10 +13,10 @@ terraform {
         version = ">= 1.7.0"
     }
 
-    argocd = {
-      source = "oboukili/argocd"
-      version = "1.2.1"
-    }
+    # argocd = {
+    #   source = "oboukili/argocd"
+    #   version = "1.2.1"
+    # }
 
 
 
