@@ -30,7 +30,7 @@ spec:
              memory: 256Mi
   destination:
     server: https://kubernetes.default.svc
-    namespace: demo
+    namespace: default
 #apiVersion: apps/v1
 #kind: Deployment
 #metadata:
