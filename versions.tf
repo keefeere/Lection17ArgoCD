@@ -8,15 +8,15 @@ terraform {
       source  = "hashicorp/kubernetes"
       # version = "~> 2.0.1"
     }    
-    kubectl = {
-        source  = "gavinbunney/kubectl"
-        version = ">= 1.7.0"
-    }
-
-    # argocd = {
-    #   source = "oboukili/argocd"
-    #   version = "1.2.1"
+    # kubectl = {
+    #     source  = "gavinbunney/kubectl"
+    #     version = ">= 1.7.0"
     # }
+
+    argocd = {
+      source = "oboukili/argocd"
+      version = "1.2.1"
+    }
 
 
 
