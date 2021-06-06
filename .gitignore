@@ -56,3 +56,6 @@ roles/
 /.test
 /k8svagrant/.vagrant
 /terraform/.terraform
+.terraform/*
+.terraform/
+*.terraform
