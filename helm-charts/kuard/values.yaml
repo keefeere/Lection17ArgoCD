@@ -45,9 +45,10 @@ ingress:
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
-  paths: /
-  hosts:
-    - kuard.keefeere.tk
+  hosts: 
+    - host: kuard.keefeere.tk
+      
+
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
