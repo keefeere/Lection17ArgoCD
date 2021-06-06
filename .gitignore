@@ -59,3 +59,5 @@ roles/
 .terraform/*
 .terraform/
 *.terraform
+.terraform
+**/.terraform/*
