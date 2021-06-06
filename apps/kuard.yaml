@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/keefeere/Lection17ArgoCD.git
-    targetRevision: master
+    targetRevision: HEAD
     path: helm-charts/kuard
     helm:
       values: |
