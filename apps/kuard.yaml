@@ -21,7 +21,7 @@ spec:
         ingress:
           enabled: true
           hosts:
-            - kuard.keefeere.tk
+            - host: kuard.keefeere.tk
         resources:
            requests:
              cpu: 10m
