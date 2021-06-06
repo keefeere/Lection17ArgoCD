@@ -8,9 +8,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://gitlab.devopsua.tk/2701/wa-infra.git
+    repoURL: https://github.com/keefeere/Lection17ArgoCD.git"
     targetRevision: HEAD
-    path: helm-charts/wa
+    path: helm-charts/kuard
     helm:
       values: |
         fullnameOverride: "kuard"
