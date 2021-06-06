@@ -47,7 +47,7 @@ ingress:
     # kubernetes.io/tls-acme: "true"
   paths: /
   hosts:
-    - chart-example.local
+    - kuard.keefeere.tk
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local

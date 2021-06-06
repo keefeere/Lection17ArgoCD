@@ -19,7 +19,7 @@ spec:
         image:
           tag: "1"
         ingress:
-          enabled: true
+          enabled: false
           hosts:
             - kuard.keefeere.tk
         resources:
