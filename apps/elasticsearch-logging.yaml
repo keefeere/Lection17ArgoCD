@@ -43,7 +43,7 @@ spec:
               storage: 1Gi
         
 
-        initContainers:
+        extraInitContainers:
           - name: volume-mount-hack
             image: busybox
             command: ["sh", "-c", "chmod -R 777 /tmp/docker"]
