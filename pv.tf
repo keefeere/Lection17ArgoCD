@@ -9,7 +9,7 @@ resource "kubernetes_persistent_volume" "host_path_volume" {
     access_modes = ["ReadWriteOnce"]
     persistent_volume_source {
       host_path {
-        path = "/tmp/es-vol"
+        path = "/var/opt/es-vol"
         type = "DirectoryOrCreate"
       }
     }
