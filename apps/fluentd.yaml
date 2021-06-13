@@ -12,7 +12,7 @@ spec:
     chart: fluentd
     targetRevision: 0.2.4
     helm:
-      values: 
+      values: |
         env:             
           - name:  FLUENT_ELASTICSEARCH_HOST
           value: "elasticsearch-logging-master"
