@@ -42,13 +42,24 @@ spec:
             requests:
               storage: 1Gi
         
+        extraVolumes: []
+          - name: fix-vol
+          
+
+        extraVolumeMounts: []
+          - name: fix-vol
+            mountPath: /var/opt/es-vol
+            readOnly: false
+
+
+
 
         extraInitContainers:
           - name: volume-mount-hack
             image: busybox
             command: ["sh", "-c", "chmod -R 777 /tmp/docker"]
             volumeMounts:
-            - name: elasticsearch-logging-master-elasticsearch-logging-master-0
+            - name: fix-vol
               mountPath: /tmp/docker
 
 
