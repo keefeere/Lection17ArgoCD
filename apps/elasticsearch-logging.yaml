@@ -41,7 +41,7 @@ spec:
           resources:
             requests:
               storage: 1Gi
-        securityContext:
+        podSecurityContext:
           fsGroup: 1000
 
         protocol: http
