@@ -44,7 +44,8 @@ spec:
         
         extraVolumes: 
           - name: fix-vol
-          
+            hostPath:
+              path: /var/opt/es-vol
 
         extraVolumeMounts: 
           - name: fix-vol
@@ -57,10 +58,10 @@ spec:
         extraInitContainers:
           - name: volume-mount-hack
             image: busybox
-            command: ["sh", "-c", "chmod -R 777 /tmp/docker"]
+            command: ["sh", "-c", "chmod -R 777 /var/opt/es-vol"]
             volumeMounts:
             - name: fix-vol
-              mountPath: /tmp/docker
+              mountPath: /var/opt/es-vol
 
 
 
