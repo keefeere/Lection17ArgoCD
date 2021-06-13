@@ -13,10 +13,10 @@ spec:
     targetRevision: 0.2.4
     helm:
       values: |
-        - name:  FLUENT_ELASTICSEARCH_HOST
-          value: "elasticsearch-logging-master"
-        - name:  FLUENT_ELASTICSEARCH_PORT
-          value: "9200"
+        # - name:  FLUENT_ELASTICSEARCH_HOST
+        #   value: "elasticsearch-logging-master"
+        # - name:  FLUENT_ELASTICSEARCH_PORT
+        #   value: "9200"
         resources:
            requests:
              cpu: 10m
