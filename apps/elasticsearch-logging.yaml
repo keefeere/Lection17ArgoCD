@@ -61,6 +61,7 @@ spec:
               runAsNonRoot: false
               runAsUser: 0
             image: busybox
+            imagePullPolicy: "IfNotPresent"
             command: ["sh", "-c", "chmod -R 777 /var/opt/es-vol"]
             volumeMounts:
             - name: fix-vol
