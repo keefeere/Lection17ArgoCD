@@ -42,12 +42,9 @@ spec:
             requests:
               storage: 1Gi
         extraInitContainers: 
-          - name: chmod
-            image: busybox
-            command: ["/bin/chmod","-R","777", "/data"]
-            volumeMounts:
-              - name: elasticsearch-logging-master-elasticsearch-logging-master-0
-                mountPath: /data
+          - name: file-permissions
+            image: "{{ .Values.image }}:{{ .Values.imageTag }}"
+            command: ['chown', '-R', '1000:1000', '/usr/share/elasticsearch/data']
 
         protocol: http
         httpPort: 9200
