@@ -43,7 +43,7 @@ spec:
               storage: 1Gi
         extraInitContainers: 
           - name: file-permissions
-            image: "{{ .Values.image }}:{{ .Values.imageTag }}"
+            image: busybox
             command: ['chown', '-R', '1000:1000', '/usr/share/elasticsearch/data']
 
         protocol: http
