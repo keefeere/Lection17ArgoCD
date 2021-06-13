@@ -47,7 +47,7 @@ spec:
             command: ["/bin/chmod","-R","777", "/data"]
             volumeMounts:
               - name: es-test-volume
-              mountPath: /data
+                mountPath: /data
 
         protocol: http
         httpPort: 9200
