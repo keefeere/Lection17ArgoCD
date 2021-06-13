@@ -41,7 +41,7 @@ spec:
           resources:
             requests:
               storage: 1Gi
-        extraInitContainers: []
+        extraInitContainers: 
           - name: chmod
             image: busybox
             command: ["/bin/chmod","-R","777", "/data"]
