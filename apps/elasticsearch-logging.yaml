@@ -48,7 +48,7 @@ spec:
             image: busybox
             command: ["sh", "-c", "chmod -R 777 /tmp/docker"]
             volumeMounts:
-            - name: es-test-volume
+            - name: elasticsearch-logging-master-elasticsearch-logging-master-0
               mountPath: /tmp/docker
 
 
