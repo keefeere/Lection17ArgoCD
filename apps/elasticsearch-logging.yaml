@@ -57,6 +57,9 @@ spec:
 
         extraInitContainers:
           - name: volume-mount-hack
+            securityContext:
+              runAsNonRoot: false
+              runAsUser: 0
             image: busybox
             command: ["sh", "-c", "chmod -R 777 /var/opt/es-vol"]
             volumeMounts:
