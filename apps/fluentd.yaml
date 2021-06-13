@@ -15,7 +15,7 @@ spec:
       values: |
         env:             
           - name:  FLUENT_ELASTICSEARCH_HOST
-            value: "elasticsearch-logging-master"
+            value: "elasticsearch-logging-master-0"
           - name:  FLUENT_ELASTICSEARCH_PORT
             value: "9200"
         resources:
