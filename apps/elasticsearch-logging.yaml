@@ -41,10 +41,8 @@ spec:
           resources:
             requests:
               storage: 1Gi
-        extraInitContainers: 
-          - name: file-permissions
-            image: busybox
-            command: ['chown', '-R', '1000:1000', '/usr/share/elasticsearch/data']
+        securityContext:
+          fsGroup: 1000
 
         protocol: http
         httpPort: 9200
