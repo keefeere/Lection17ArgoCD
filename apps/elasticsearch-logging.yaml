@@ -42,11 +42,11 @@ spec:
             requests:
               storage: 1Gi
         
-        extraVolumes: []
+        extraVolumes: 
           - name: fix-vol
           
 
-        extraVolumeMounts: []
+        extraVolumeMounts: 
           - name: fix-vol
             mountPath: /var/opt/es-vol
             readOnly: false
