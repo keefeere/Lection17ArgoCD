@@ -41,8 +41,17 @@ spec:
           resources:
             requests:
               storage: 1Gi
-        securityContext:
-          runAsNonRoot: false
+        
+
+        initContainers:
+          - name: volume-mount-hack
+            image: busybox
+            command: ["sh", "-c", "chmod -R 777 /tmp/docker"]
+            volumeMounts:
+            - name: es-test-volume
+              mountPath: /tmp/docker
+
+
 
         protocol: http
         httpPort: 9200
