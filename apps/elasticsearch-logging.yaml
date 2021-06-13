@@ -41,9 +41,8 @@ spec:
           resources:
             requests:
               storage: 1Gi
-        podSecurityContext:
-          fsGroup: 0
-          runAsUser: 0
+        securityContext:
+          runAsNonRoot: false
 
         protocol: http
         httpPort: 9200
