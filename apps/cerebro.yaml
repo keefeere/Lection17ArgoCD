@@ -26,7 +26,7 @@ spec:
         config:
           basePath: '/'
           restHistorySize: 50
-          hosts: []
+          hosts: 
            - host: 'http://elasticsearch-logging-master:9200 '
              name:  'Elastic Master'  
          
