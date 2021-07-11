@@ -27,8 +27,8 @@ spec:
           basePath: '/'
           restHistorySize: 50
           hosts: 
-           - host: 'Elasticsearch'
-             name:  'http://elasticsearch-logging-master:9200'  
+           - host: 'http://elasticsearch-logging-master:9200'
+             name:  'Elasticsearch'  
          
   destination:
     server: https://kubernetes.default.svc
