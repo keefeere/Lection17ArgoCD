@@ -13,7 +13,7 @@ spec:
     targetRevision: 7.10.2
     helm:
       values: |
-        - elasticsearchHosts: "http://elasticsearch-logging-master:9200"
+        elasticsearchHosts: "http://elasticsearch-logging-master:9200"
   destination:
     server: https://kubernetes.default.svc
     namespace: logging
