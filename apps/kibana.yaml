@@ -11,25 +11,9 @@ spec:
     repoURL: https://helm.elastic.co
     chart: kibana
     targetRevision: 7.10.2
-    # helm:
-    #   values: |
-    #     env:             
-    #       - name:  FLUENT_ELASTICSEARCH_HOST
-    #         value: "elasticsearch-logging-master"
-    #       - name:  FLUENT_ELASTICSEARCH_PORT
-    #         value: "9200"
-    #       - name:  FLUENT_UID
-    #         value: "0"
-    #       - name:  FLUENTD_SYSTEMD_CONF
-    #         value: "disabe"
-
-
-    #     resources:
-    #        requests:
-    #          cpu: 10m
-    #          memory: 128Mi
-    #        limits:
-    #          memory: 256Mi
+    helm:
+      values: |
+        - elasticsearchHosts: "http://elasticsearch-logging-master:9200"
   destination:
     server: https://kubernetes.default.svc
     namespace: logging
