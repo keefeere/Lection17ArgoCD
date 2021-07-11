@@ -11,9 +11,18 @@ spec:
     repoURL: https://stakater.github.io/stakater-charts
     chart: cerebro
     targetRevision: 0.5.1
-    # helm:
-    #   values: |
-    #     elasticsearchHosts: "http://elasticsearch-logging-master:9200"
+    helm:
+      values: |
+        ingress:
+          enabled: true
+          annotations: {}
+            kubernetes.io/ingress.class: traefik-cert-manager
+            # kubernetes.io/tls-acme: "true"
+          labels: {}
+          path: /
+          hosts:
+            - cerebro.keefeere.tk
+          
   destination:
     server: https://kubernetes.default.svc
     namespace: logging
