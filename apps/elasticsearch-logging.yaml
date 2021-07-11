@@ -21,6 +21,7 @@ spec:
           data: "true"
         replicas: 1
         minimumMasterNodes: 1
+        clusterHealthCheckParams: 'wait_for_status=yellow&timeout=1s'
         esConfig:
           elasticsearch.yml: |
             indices.lifecycle.history_index_enabled: false
