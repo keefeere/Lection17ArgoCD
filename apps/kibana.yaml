@@ -1,0 +1,35 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kibana
+  namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "4"
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/elastic/kibana
+    chart: kibana
+    targetRevision: 8.0.0-SNAPSHOT
+    # helm:
+    #   values: |
+    #     env:             
+    #       - name:  FLUENT_ELASTICSEARCH_HOST
+    #         value: "elasticsearch-logging-master"
+    #       - name:  FLUENT_ELASTICSEARCH_PORT
+    #         value: "9200"
+    #       - name:  FLUENT_UID
+    #         value: "0"
+    #       - name:  FLUENTD_SYSTEMD_CONF
+    #         value: "disabe"
+
+
+    #     resources:
+    #        requests:
+    #          cpu: 10m
+    #          memory: 128Mi
+    #        limits:
+    #          memory: 256Mi
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: logging
