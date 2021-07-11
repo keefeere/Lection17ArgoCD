@@ -8,8 +8,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/elastic/kibana
-    chart: kibana
+    repoURL: https://helm.elastic.co
+    chart: elastic/kibana
     targetRevision: 8.0.0-SNAPSHOT
     # helm:
     #   values: |
