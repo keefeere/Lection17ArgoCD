@@ -23,7 +23,13 @@ spec:
           path: /
           hosts:
             - cerebro.keefeere.tk
-          
+        config:
+          basePath: '/'
+          restHistorySize: 50
+          hosts: []
+           - host: 'http://elasticsearch-logging-master:9200 '
+             name:  'Elastic Master'  
+         
   destination:
     server: https://kubernetes.default.svc
     namespace: logging
