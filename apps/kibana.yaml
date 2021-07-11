@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://helm.elastic.co
     chart: elastic/kibana
-    targetRevision: 8.0.0
+    targetRevision: 8.0.0-SNAPSHOT
     # helm:
     #   values: |
     #     env:             
