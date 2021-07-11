@@ -8,9 +8,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/wiremind/wiremind-helm-charts
+    repoURL: https://stakater.github.io/stakater-charts
     chart: cerebro
-    targetRevision: 1.9.4
+    targetRevision: 0.5.1
     # helm:
     #   values: |
     #     elasticsearchHosts: "http://elasticsearch-logging-master:9200"
