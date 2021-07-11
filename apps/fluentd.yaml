@@ -18,6 +18,12 @@ spec:
             value: "elasticsearch-logging-master"
           - name:  FLUENT_ELASTICSEARCH_PORT
             value: "9200"
+          - name:  FLUENT_UID
+            value: "0"
+          - name:  FLUENTD_SYSTEMD_CONF
+            value: "disabe"
+
+
         resources:
            requests:
              cpu: 10m
